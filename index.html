@@ -363,11 +363,8 @@
         </div>
         <div>
           <form class="js-speaker-form form-subscription">
-            <div class="form-field">
-              <label class="form-title" for="mail">
-              Підпишіться на розсилку </label>
-              <input class="email" type="email" name="mail" id="mail" placeholder="E-mail"/>
-            </div>
+              <label class="form-fieldset"  ><span class="form-title">Підпишіться на розсилку</span>
+               <input class="email" type="email" name="mail" placeholder="E-mail"/></label>
               <button class="button " type="submit"><span class="text">Підписатися</span> 
                 <svg class="icon" width="24" height="24">
                   <use href="./imges/icons.svg#icon-send-1"></use>
@@ -383,18 +380,23 @@
         <button class="modal-button" data-modal-close>&#10005;</button>
         <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="js-speaker-form form-modal">
-            <div class="form-field">
-              <label class="form-title" for="mail">Ім'я </label>
-              <input class="name" type="text" name="name" id="name" />
-            </div>
-            <div class="form-field">
-              <label class="form-title" for="mail">Телефон </label>
-              <input class="tel" type="tel" name="tel" id="tel" />
-            </div>
-            <div class="form-field">
-              <label class="form-title" for="mail">Пошта </label>
-              <input class="email" type="email" name="mail" id="mail" />
-            </div>
+              <label class="form-fieldset" ><span class="form-title">Ім'я</span>
+              <input class="info" type="text" name="name"  /> </label>
+              
+              <label class="form-fieldset" >
+                <span class="form-title">Телефон</span>
+                <input class="info" type="tel" name="tel"  /> </label>
+              
+              <label class="form-fieldset" >
+                <span class="form-title">Пошта</span> 
+                <input class="info" type="email" name="mail" /> </label>
+                <label class="form-fieldset" >
+                  <span class="form-title">Коментар</span> 
+                  <textarea class="info text" name="comment" placeholder="Введіть текст"  cols="30" rows="10"></textarea>
+                </label>
+                <label class="form-fieldset" >
+                  <input class="info" type="checkbox" name="agry" checked /><span>Погоджуюся з розсилкою та приймаю</span> <a href=""><span>Умови договору</span> </a>
+                </label>
               <button class="button " type="submit">
               </button>
           </form>
